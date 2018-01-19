@@ -1,0 +1,35 @@
+<div class="container padding-15">
+    <div class="row ">
+        <div class="col-sm-2">
+            <ul class="list-unstyled">
+                <li class="text-1">You are ordering:</li>
+                <li class="text-2">{{cardItems}} items</li>
+                <li class="text-3 text-green">VIEW / EDIT PRODUCTS</li>
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            <ul class="list-unstyled">
+                <li class="text-1">For delivery to:</li>
+                <li class="text-2 padding-top0">
+                    <input class="form-control delivery-box" placeholder="Hakney, London" type="text" ng-model="orderDetails.address"/>
+                </li>
+                <li class="text-3">WRONG AREA? WANT TO PROVIDE AN EXACT ADDRESS? ENTER IT ABOVE TO FIND LOCAL MAKERS...</li>
+            </ul>
+        </div>
+        <div class="col-sm-2">
+            <ul class="list-unstyled">
+                <li class="text-1">Within:</li>
+                <li class="text-2 padding-top0">
+                    <select class="dropdown form-control" ng-model="orderDetails.orderDays">
+                        <option value="1">1 weeks</option>
+                        <option value="2">2 weeks</option>
+                        <option value="3">3 weeks</option>
+                        <option value="4">4 weeks</option>
+                        <option value="5">5 weeks</option>
+                    </select>
+                </li>
+                <li class="text-3">OR PICK PREFERRED DATE</li>
+            </ul>
+        </div>
+    </div>
+</div>

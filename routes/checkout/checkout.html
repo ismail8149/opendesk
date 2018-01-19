@@ -1,0 +1,28 @@
+<div ng-controller="checkoutCtrl">
+<div class="container-fluid order-box">
+    <div ng-include="'./../components/orders/order.html'"></div>
+</div>
+<div class="container fo-height">
+    <div class="row package-container padding-15" ng-repeat="item in selectedData">
+        <div class="clearfix">
+            <div class="col-sm-2 no-pad">
+                <img ng-src="{{item.imageUrl}}" class="img-responsive  package-img">
+            </div>
+            <div class="col-sm-8">
+                <ul class="list-unstyled">
+                    <li class="text-4">{{::item.name}}</li>
+                    <li class="text-1">service1 : {{::item.service1}}</li>
+                    <li class="text-1"> service2 : {{::item.service2}}</li>
+                    <li class="text-1"> service3 : {{::item.service3}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <div class="padding-top-15">
+                    <div class="order-count">{{item.quantity}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-confirm pull-right " ng-click="onCheckoutItems()"> Checkout Items</button>
+</div>
+</div>

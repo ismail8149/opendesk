@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="demo-app" lang="en">
+<head>
+    <title>Opendesk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="main-container">
+    <div ng-include="'components/header/header.html'"></div>
+    <ui-view></ui-view>
+    <div ng-include="'components/footer/footer.html'"></div>
+</div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script src="routes/home/homeCtrl.js"></script>
+<script src="routes/checkout/checkoutCtrl.js"></script>
+<script src="components/services/itemServices.js"></script>
+<script src="components/services/commonService.js"></script>
+</body>
+</html>
